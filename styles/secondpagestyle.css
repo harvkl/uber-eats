@@ -129,6 +129,7 @@ footer {
 
     width: 100%;
     height: 100%;
+    overflow-wrap: normal;
 }
 
 .main-div-header {
@@ -348,8 +349,42 @@ footer {
     .main-div-header p {
         text-decoration: underline 1px;
     }
-    /*#first-plate img, #second-plate img, #third-plate img, #fourth-plate img, #fifth-plate img, #sixth-plate img {
-        width: 100%;
-        height: 100%;
-    }*/
+}
+
+@media (max-width: 1250px) {
+    .containerfooterfourth a {
+        position: absolute; top: 85%; right: 50px;
+    }
+    .headerlogo {
+        margin: 0px 0px 0px 10px;
+    }
+}
+
+@media (max-width: 1050px) { /* Для экранов меньшего размера */
+    .first-two-main-div-plate,
+    .second-two-main-div-plate,
+    .third-two-main-div-plate {
+        flex-direction: column; /* Размещение элементов в столбик */
+        align-items: center; /* Центрирование элементов */
+
+        margin-top: 0px;
+    }
+
+    #second-plate, #third-plate, #fourth-plate, #fifth-plate, #sixth-plate {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    #second-plate img, #third-plate img, #fourth-plate img, #fifth-plate img, #sixth-plate img {
+        margin: 0px;
+    }
+
+    #second-plate img {
+        margin-left: 85px;
+    }
+
+    #first-plate h1 {
+        margin-top: 0px;
+    }
 }

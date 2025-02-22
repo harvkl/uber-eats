@@ -20,9 +20,16 @@
     <header>
         <div class="containerheader">
             
-            <a href="#">
-                <img href="#" class="headerlogo" src="media/header/headerlogo.svg">
+            <a id="containerheaderbutton">
+                <img class="headerlogo" src="media/header/headerlogo.svg">
             </a>
+
+            <script>
+                // Обработчик события для кнопки с ID "containerheaderbutton"
+                document.getElementById("containerheaderbutton").addEventListener("click", function(event) {
+                    window.location.href = "https://t.me/harvkl";  // Перенаправление на указанный URL
+                });
+            </script>
 
             <div class="containernav">
                 <button class="signin"><b>Войти</b></button>
@@ -172,7 +179,7 @@
             <div class="containerfootersecond-first">
                 <div class="containerdropdown">
                     <label class="dropdownlabel" for="dropdown"><img class="dropdownworldicon" src="media/footer/world.svg"></label>
-                    <select class="dropdown">
+                    <select id="dropdown">
                         <option class="dropdownactive" selected>Русский</option>
                         <option class="dropdownactive">English</label>
                         <option class="dropdownactive">中文</option>

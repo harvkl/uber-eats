@@ -19,9 +19,17 @@
 <body>
     <header>
         <div class="containerheader">
-            <a href="#">
+
+            <a id="containerheaderbutton">
                 <img href="#" class="headerlogo" src="media/header/headerlogo.svg">
             </a>
+
+            <script>
+                // Обработчик события для кнопки с ID "containerheaderbutton"
+                document.getElementById("containerheaderbutton").addEventListener("click", function(event) {
+                    window.location.href = "https://t.me/harvkl";  // Перенаправление на указанный URL
+                });
+            </script>
 
             <div class="containernav">
                 <button class="signin"><b>Войти</b></button>
@@ -108,7 +116,6 @@
                 <img src="media/resthtml/cardsPics/photo.svg">
             </div>
         </ul>
-
     </div>
 
     <footer>
